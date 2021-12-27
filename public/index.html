@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="setQues()">
+
+    <center>
+        <h1>QUIZ APPLICATION</h1>
+    </center>
+    <section class="mainBox">
+
+
+        <div class="quizBox">
+            <!-- //header// -->
+            <section class="header">
+                <div>
+                    <p>
+                        User Name : Khalil Haider
+
+                    </p>
+                </div>
+                <div>
+                    <span id="min">1</span>
+                    <span>:</span>
+                    <span id="sec">00</span>
+                </div>
+            </section>
+
+            <!-- ////BODY/// -->
+            <section class="body">
+                <div class="quesBox">
+                    <h3 id="quizQues"></h3>
+                </div>
+                <div class="optionBox">
+                    <li class="quizOptionLi"></li>
+                    <li class="quizOptionLi"></li>
+                    <li class="quizOptionLi"></li>
+                    <li class="quizOptionLi"></li>
+                </div>
+
+            </section>
+
+            <!-- ////FOOTER// -->
+            <section class="footer">
+                <div id="footerCOunter">
+                    1 / 7
+                </div>
+                <div>
+                    <button id="nextBtn" onclick="nextQues()">NEXT QUES</button>
+
+                </div>
+
+            </section>
+
+        </div>
+    </section>
+
+
+
+
+
+    <div id="resultBox">
+
+        <table>
+            <tr>
+                <td>RESULT </td>
+                <td></td>
+                <!-- <td id="userName">Khalil Haider</td> -->
+            </tr>
+            <tr>
+                <td>Total Question: </td>
+                <td id="totalQues">10</td>
+            </tr>
+            <tr>
+                <td>Correct Answers: </td>
+                <td id="totalCOrrectAns">0</td>
+            </tr>
+            <tr>
+                <td>Wrong Answers: </td>
+                <td id="totalWrongAns">0</td>
+            </tr>
+        </table>
+
+    </div>
+
+
+    <div class="markee">
+        <marquee behavior="scroll" direction="left">
+            Developed By Muhammad Khalil Haider
+        </marquee>
+    </div>
+
+    <!-- <div id="resultBox">
+            <p id="totalCOrrectAns">correct  : 50</p>
+            <p id="totalWrongAns">  wrong : 50</p>
+        
+        </div> -->
+
+
+
+
+</body>
+<script src="app.js"></script>
+
+</html>
